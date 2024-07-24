@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh; /* (100% of view port) */
+}
+
+.inputBox {
+    margin-top: 6%;
+    width: 70%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+.err {
+    color: red;
+    font-size: 14px;
+}
+
+hr {
+    width: 80%;
+}
+
+button {
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    width: 20%;
+    cursor: pointer;
+    margin: 6%; 
+}
+
+button:hover span:after {
+    content: " »"
+    
+}
+
+button:hover {
+    padding: 12px;
+    transition: all 0.5s;
+}
+
+h3, p {
+    color: white;
+}

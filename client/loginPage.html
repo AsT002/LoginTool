@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Tool</title>
+    <link rel="icon" type="image/png" href="icons8-login-100.png">
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+<body style="background-color: black;">
+    <script src="./main.js"></script>
+    <div class="container">
+        <h3>Welcome! Please <u>Login</u></h3>
+        <hr>
+        <input type="text" class="inputBox" id="username" placeholder="username">
+        <input type="password" class="inputBox" id="password" placeholder="password">
+        <br>
+        <p>Show Password: <input type="checkbox" id="toggle" onclick="togglePassword()"></p>
+        <button class="login" onclick="login()">
+            <span>Login</span>
+        </button>
+        <p class="err" id="error"></p>
+    </div>
+</body>
+</html>
