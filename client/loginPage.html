@@ -7,19 +7,27 @@
     <link rel="icon" type="image/png" href="icons8-login-100.png">
     <link rel="stylesheet" href="loginStyle.css">
 </head>
-<body style="background-color: black;">
-    <script src="./main.js"></script>
+<body>
     <div class="container">
         <h3>Welcome! Please <u>Login</u></h3>
         <hr>
-        <input type="text" class="inputBox" id="username" placeholder="username">
-        <input type="password" class="inputBox" id="password" placeholder="password">
-        <br>
-        <p>Show Password: <input type="checkbox" id="toggle" onclick="togglePassword()"></p>
-        <button class="login" onclick="login()">
-            <span>Login</span>
-        </button>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" class="inputBox" id="username" placeholder="username">
+            <label for="password">Password</label>
+            <input type="password" class="inputBox" id="password" placeholder="password">
+            <br>
+            <label for="toggle">Show Password</label>
+            <input type="checkbox" id="toggle" onclick="togglePassword()">
+            <button type="button" class="login" onclick="login()">
+                <span>Login</span>
+            </button>
+            <button type="button" class="signup" onclick="createUser()">
+                <span>Sign up</span>
+            </button>
+        </form>
         <p class="err" id="error"></p>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
